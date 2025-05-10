@@ -9,3 +9,18 @@ Aplikacioni ofron opsione të ndryshme për të punuar me kodimin dhe dekodimin 
 3. Dekodim manual i tekstit: Ky opsion lejon përdoruesin të shkruajë tekstin e koduar që dëshiron të dekodifikojë.
 4. Kodim nga një file: Ky opsion mundëson kodimin e përmbajtjes së një skedari dhe ruajtjen e rezultateve në një skedar të ri.
 5. Dekodim nga një file: Ky opsion mundëson dekodimin e përmbajtjes së një skedari dhe ruajtjen e rezultateve në një skedar të ri.
+
+## Struktura e Projektit
+- **MainApp.java**  
+  Ky është aplikacioni kryesor që menaxhon ndërfaqen e përdoruesit dhe ofron opsionet e listuara më lart.  
+  - Përdor `Scanner` për të marrë input nga përdoruesi.  
+  - Implementon opsionet për kodim dhe dekodim të teksteve dhe përmbajtjeve nga skedarët.
+- **Encoder.java**  
+  Klasa që implementon logjikën e kodimit të tekstit në formatin Base64.  
+  - Përdor një array të karaktereve të Base64 dhe algoritmin për të koduar të dhënat.
+- **Decoder.java**  
+  Klasa që implementon logjikën e dekodimit të tekstit nga formati Base64.  
+  - Merr tekstin e koduar dhe e rikthen atë në formën origjinale.
+- **ShembujGatshem.java**  
+  Klasa që ofron shembuj të gatshëm për kodim dhe dekodim.  
+  - Përdor një tekst të thjeshtë, e kodon dhe më pas e dekodon për të demonstruar funksionalitetin.
