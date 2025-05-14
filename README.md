@@ -24,3 +24,18 @@ Aplikacioni ofron opsione të ndryshme për të punuar me kodimin dhe dekodimin 
 - **ShembujGatshem.java**  
   Klasa që ofron shembuj të gatshëm për kodim dhe dekodim.  
   - Përdor një tekst të thjeshtë, e kodon dhe më pas e dekodon për të demonstruar funksionalitetin.
+
+## Metodat Kryesore te Klasave
+1. MainApp.java:
+main(String[] args): Kontrollon opsionet që zgjedh përdoruesi dhe kryen veprimet përkatëse.
+lexoNgaFile(String fileName): Lexon përmbajtjen e një skedari dhe e kthen si një varg tekstual.
+shkruajNeFile(String fileName, String content): Shkruan përmbajtjen e dhënë në një skedar të specifikuar.
+
+2. Encoder.java:
+encode(byte[] input): Kodifikon një varg bajtash në Base64.
+
+3. Decoder.java:
+decode(String input): Dekodifikon një varg të koduar në Base64 dhe e kthen atë në formatin origjinal.
+
+4. ShembujGatshem.java:
+shfaqShembuj(): Tregon një shembull të kodimit dhe dekodimit të një teksti të thjeshtë duke përdorur Base64.
