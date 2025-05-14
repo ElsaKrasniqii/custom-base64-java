@@ -22,6 +22,7 @@ public class Base64Decoder {
         int outputIndex = 0;
 
         for (char c : base64.toCharArray()) {
+            if (base64Inv[c] == -1) continue; // skip invalid characters
 
 
             buffer = (buffer << 6) | base64Inv[c];
