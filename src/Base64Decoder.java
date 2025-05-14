@@ -10,8 +10,9 @@ public class Base64Decoder {
         for (int i = 0; i < base64Inv.length; i++) base64Inv[i] = -1;
         for (int i = 0; i < base64Chars.length; i++) base64Inv[base64Chars[i]] = i;
 
-      \
 
+        base64 = base64.replace("=", "");
+        
         int length = base64.length();
         int outputLength = (length * 6) / 8;
         byte[] output = new byte[outputLength];
