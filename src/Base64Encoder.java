@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Base64Encoder {
     private static final char[] BASE64_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".toCharArray();
 
