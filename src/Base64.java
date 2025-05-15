@@ -22,7 +22,7 @@ public class Base64 {
 
                 switch (zgjedhja) {
                     case 1:
-
+                        Base64Examples.shfaqShembuj();
                         break;
                     case 2:
                         System.out.println("Shkruaj tekstin për kodim:");
@@ -33,16 +33,32 @@ public class Base64 {
                     case 3:
                         System.out.println("Shkruaj tekstin për dekodim:");
                         String tekstPerDekodim = scanner.nextLine();
-
-
+                        byte[] eDekoduarBytes = Base64Decoder.decode(tekstPerDekodim);
+                        String eDekoduar = new String(eDekoduarBytes);
+                        System.out.println("Rezultati i dekoduar: " + eDekoduar);
                         break;
                     case 4:
+                        System.out.print("Shkruaj emrin e file-it për të lexuar tekstin: ");
+                        String inputFileEncode = scanner.nextLine();
+                        String contentEncode = lexoNgaFile(inputFileEncode);
+                        String encodedFromFile = Base64Encoder.encode(contentEncode.getBytes());
 
-
+                        System.out.print("Shkruaj emrin e file-it për të ruajtur tekstin e koduar: ");
+                        String outputFileEncode = scanner.nextLine();
+                        shkruajNeFile(outputFileEncode, encodedFromFile);
+                        System.out.println("Teksti u kodua dhe u ruajt me sukses.");
                         break;
                     case 5:
+                        System.out.print("Shkruaj emrin e file-it për të lexuar tekstin e koduar: ");
+                        String inputFileDecode = scanner.nextLine();
+                        String contentDecode = lexoNgaFile(inputFileDecode);
+                        byte[] decodedBytes = Base64Decoder.decode(contentDecode);
+                        String decodedText = new String(decodedBytes);
 
-
+                        System.out.print("Shkruaj emrin e file-it për të ruajtur tekstin e dekoduar: ");
+                        String outputFileDecode = scanner.nextLine();
+                        shkruajNeFile(outputFileDecode, decodedText);
+                        System.out.println("Teksti u dekodua dhe u ruajt me sukses.");
                         break;
                     case 0:
                         vazhdo = false;
