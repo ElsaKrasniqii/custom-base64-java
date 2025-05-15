@@ -96,8 +96,9 @@ public class Base64 {
 
 
     public static void shkruajNeFile(String fileName, String content) throws IOException {
-        BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
+        BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true));
         writer.write(content);
+        writer.newLine();
         writer.close();
     }
 
