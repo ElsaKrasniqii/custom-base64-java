@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.Scanner;
 
 public class Base64 {
@@ -66,4 +67,21 @@ public class Base64 {
             scanner.close();
         }
     }
+    public static String lexoNgaFile(String fileName) throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(fileName));
+        StringBuilder content = new StringBuilder();
+        String rreshti;
+        while ((rreshti = reader.readLine()) != null) {
+            content.append(rreshti).append("\n");
+        }
+        reader.close();
+        return content.toString().trim();
+    }
+
+    public static void shkruajNeFile(String fileName, String content) throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
+        writer.write(content);
+        writer.close();
+    }
+
 }
