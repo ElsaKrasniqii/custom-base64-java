@@ -39,3 +39,16 @@ decode(String input): Dekodifikon një varg të koduar në Base64 dhe e kthen at
 
 4. ShembujGatshem.java:
 shfaqShembuj(): Tregon një shembull të kodimit dhe dekodimit të një teksti të thjeshtë duke përdorur Base64.
+
+## Si Përdoret Aplikacioni
+Pasi të nisni aplikacionin, do të shfaqen opsionet e mëposhtme për përdoruesin:Zgjidh opsionin:
+1. Shembuj të gatshëm
+2. Encode tekst (manual)
+3. Decode tekst (manual)
+4. Encode nga file
+5. Decode nga file 
+Opsioni 1 (Shembuj të Gatshëm): Ky opsion shfaq shembuj të gatshëm të kodimit dhe dekodimit.
+Opsioni 2 (Encode tekst manual): Ky opsion kërkon që përdoruesi të shkruajë tekstin për ta koduar në Base64.
+Opsioni 3 (Decode tekst manual): Ky opsion kërkon që përdoruesi të shkruajë tekstin që dëshiron të dekodifikojë.
+Opsioni 4 (Encode nga file): Ky opsion kërkon që përdoruesi të japë emrin e skedarit për të lexuar përmbajtjen dhe për ta koduar atë në Base64. Rezultati i koduar ruhet në një skedar tjetër.
+Opsioni 5 (Decode nga file): Ky opsion kërkon që përdoruesi të japë emrin e skedarit për të lexuar përmbajtjen e koduar dhe për ta dekoduar atë. Rezultati i dekoduar ruhet në një skedar tjetër.

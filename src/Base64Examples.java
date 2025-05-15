@@ -9,6 +9,4 @@ public class Base64Examples {
         System.out.println("E koduar: " + eKoduar);
         System.out.println("E dekoduar: " + eDekoduar);
     }
-
-
 }
