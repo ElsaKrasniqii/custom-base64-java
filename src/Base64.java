@@ -78,10 +78,12 @@ public class Base64 {
         return content.toString().trim();
     }
 
+
     public static void shkruajNeFile(String fileName, String content) throws IOException {
         BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
         writer.write(content);
         writer.close();
     }
+
 
 }
